@@ -1,11 +1,15 @@
-function show_popup(id) {
-	var popup = document.getElementById(id);
-	popup.classList.toggle("show");
-	
+function toggle_popup(id) {
+	document.getElementById(id).classList.toggle("show");
 	document.getElementById("root").classList.toggle("locked");
 }
 
 
-window.onscroll = function(event) {
-    show_popup("popup_a");
-};
+var checkpoint = 0;
+
+window.addEventListener("scroll", function() {
+	var elementTarget = document.getElementById("checkpoint_a");
+	if (checkpoint == 0 && window.scrollY > (elementTarget.offsetTop + elementTarget.offsetHeight)) {
+		toggle_popup("popup_a");
+		checkpoint++;
+	}
+});
