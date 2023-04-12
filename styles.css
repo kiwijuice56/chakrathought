@@ -46,6 +46,11 @@ nav a {
 	text-decoration: none;
 }
 
+#home_text {
+	font-weight: 900;
+	color: #355e8f;
+}
+
 
 img {
 	max-width: 100%;
@@ -61,10 +66,14 @@ img.author_pfp {
 	padding-right: 1%;
 }
 
-p.author_name {
+p.author_name, figcaption {
 	font-style: italic;
 	color: #91979e;
 	font-size: 14px;
+}
+
+figcaption {
+	text-align: center;
 }
 
 .panel {
