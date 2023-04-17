@@ -5,7 +5,7 @@
 
 <link rel="stylesheet" href="styles.css"/> 
 <script src="script.js"> </script>
-<title>Website</title>
+<title>ChakraThought</title>
 
 </head>
 
@@ -27,7 +27,7 @@
 		<p>Welcome! Unfortunately, you have exhausted the monthly free-5%-of-an-article trial period. ChakraThought.com provides content for absolutely no cost, but we require you to provide personal info that we will definitely not sell to predatory marketers!</p>
 		<h3>Chakraccount Sign Up</h3>
 		<div>
-			<label for="name">First Name <font style="color: red">*</font> </label>
+			<label for="name">Name <font style="color: red">*</font> </label>
 			<input type="text" id="name"></input> <br>
 			
 			<label for="name">Fav. color <font style="color: red">*</font></label> 
@@ -46,14 +46,26 @@
 <div class="popup" id="popup_b">
 	<span class="popup_background"></span>
 	<div class="panel"> 
-		<button title="Stop trying it." class="close_button">x</button>
+		<button onclick="alert('Oops! It looks like you clicked the wrong button! Please continue the sign-in process.')" title="Stop trying it." class="close_button">x</button>
 		<h2> Mailing List </h2>
+		<p>The Chakra Mailing List is guaranteed to revolutionize how you think, act, and feel! Once you sign up, you will receive FREE links to our weekly TrendOfTheWeek and RyanRadRecipe posts. Please note that you cannot cancel your subscription after signing up.</p>
 		<div>
 			<label for="name">Email <font style="color: red">*</font> </label>
 			<input type="text" id="email"></input> <br>
-			
 			<button onclick="toggle_popup('popup_b')">Opt-in for permanent mailing list</button>
 			<button title="Absolutely not!">Cancel and miss out on becoming a moral, healthy, and loving person.</button>
+		</div> 
+	</div>
+</div>
+<div class="popup" id="popup_c">
+	<span class="popup_background"></span>
+	<div class="panel"> 
+		<button title="It works this time :)!" class="close_button"  onclick="toggle_popup('popup_c')">x</button>
+		<h2>Share This Article!</h2>
+		<p>Enjoying your free Chakra article? Share this post with 500 other people to continue reading! We rely on readers like you to generate more deep and insightful content. Thank you!</p>
+		<div>
+			<button onclick="reduce_copies()"> Copy Article Link! </button>
+			<p id="share_thing">Shares Remaining: 500</p>
 		</div> 
 	</div>
 </div>
@@ -62,48 +74,62 @@
 	
 	<div>
 		<img src="images/man.jpg" class="author_pfp"/>
-		<p class="author_name"> Analysis by {insert name here} at the Southern Hoover Anglican Missionary </p>
+		<p class="author_name"> Analysis by Aima Phake at the Southern Hoover Anglican Missionary </p>
 	</div>
 	
 	<img src="images/snail.jpg"/>
-	<figcaption>A beach snail oozing with confidence and charisma, something you could only wish to imitate.</figcaption>
+	<figcaption>A beach snail oozing with confidence and charisma.</figcaption>
 	
-	<p>You read that title right: summer snails are the HOTTEST trend to compliment your beach bod while you sip your piña colada in the beaches of Cancún! You might recognize snails as the useless, disgusting critters of the dirt, but a research team at the Southern Hoover Anglican Missionary have JUST discovered why snails are the new craze. </p>
+	<p>Yes, you read that title right: summer snails are the <b>HOTTEST</b> trend to compliment your beach bod while you sip your piña colada in the beaches of Cancún! You might recognize snails as the useless, disgusting critters of the grime, but an innovative research team at the Southern Hoover Anglican Missionary have made groundbreaking research on why snails are the new craze.</p>
 	
 	<div id="checkpoint_a"> </div>
 	
 	<p>
-	Snails serve the vital function of maintaining their chiralpractic vaccu-environments <i> (wow!)</i>, recycling the energy of delapidated collections of organ systems back into the environment <i>(ewww!)</i>, and providing for new life over countless millennia. If you are like us at ChakraThought, we know what you must be thinking: <i>What??</i> More importantly, we asked ourselves: How can we ever hope to feel as important, secure, and deep as a snail?! Fret not dear reader, because this AWESOME list is guaranteed to transform you from a lingering laggard to the most sizzling slug straggler on your feed!
+	In an experiment, the team observed that snails serve the vital role of maintaining their chiralnarcassistic vaccvironments <i>(wow!)</i>, recycling the energy of dilapidated organ systems back into the environment <i>(ewww!)</i>, and providing for new life over countless millennia <i>(#throwback thursday am I right?!)</i>. Evidently, these 100% legitimate scientific explanations illustrate the importance of snails to the ecosystem.
+	</p>
+	
+	<img src="images/snail-asset.png"/>
+	<figcaption>Scientifically Awesome!</figcaption>
+	
+	<p>
+	If you are like us at ChakraThought, we know what you must be thinking: How can we ever hope to feel as important, significant, and necessary as a snail?! Fret not dear reader, because this AWESOME list is guaranteed to transform you from a lingering laggard to the most sizzling slug straggler on your feed!
 	</p>
 	
 	<h2> Reason #1: Confidence! </h2>
 	
 	<img src="images/snaillings.jpg"/>
-	<figcaption>Beautiful "snaillings" sent in by {insert name here}.</figcaption>
+	<figcaption>Beautiful "snaillings" sent in by RealUser1083102.</figcaption>
 	
 	<div id="checkpoint_b"> </div>
 	
-	<p>The hay yay like horse a. The horse in a hay yay. In like horse yay a hay the. In a. Yay. Like a. Hay a the like yay horse. Horse hay in yay a. A the horse yay like in hay. The horse like a in yay hay. Hay like horse a yay. In hay a horse. Hay a yay like the in. Hay a in like.  </p>
-	
-	<p>Yay in like hay. A hay the yay. Like the. Horse hay a yay like. Horse a like yay. </p>
+	<p>Live snails make the perfect accessory to your summer wardrobe: if you can’t quite bury your harrowing insecurities, remember that no one can be insecure if everyone is insecure! Your snail-cessories are guaranteed to convince the entire world that you’re aligned with your inner snail, especially if you post photos wearing them on all of your social media constantly.  And I mean– come on, what’s even like, the POINT of a snail pet if you don’t show it off 24/7? Snails are an awesome reminder to that ONE annoying coworker that they’ll never be quite as epic as you! </p>
 	
 	<h2> Reason #2: Everyone Else Is Doing It! </h2>
 	
 	<img src="images/the_rock_snaillings.png"/>
 	<figcaption>You look like an idiot without snaillings.</figcaption>
 	
-	<p>The hay yay like horse a. The horse in a hay yay. In like horse yay a hay the. In a. Yay. Like a. Hay a the like yay horse. Horse hay in yay a. A the horse yay like in hay. The horse like a in yay hay. Hay like horse a yay. In hay a horse. Hay a yay like the in. Hay a in like.  </p>
+	<p>If we haven’t convinced you yet, just remember that all of your cooler friends are already “dripped out” with snails! Just 12 hours ago, Dwayne “The Rock” Johnson himself was caught with the most perfect pair of snails. If a celebrity is doing it, it's basically 100% proven that you need to be doing it as well <i>(Chakra-verified stat).</i></p>
 	
-	<p>Yay in like hay. A hay the yay. Like the. Horse hay a yay like. Horse a like yay. </p>
+	
+	<div id="checkpoint_c"> </div>
 
-	<h2> Reason #40: They Fill The Void In Your Life! </h2>
+	<h2> Reason #42: They Fill The Void In Your Life! </h2>
 	
 	<img src="images/escargot.jpg"/>
-	<figcaption>I'm not paid enough to write 42 reasons.</figcaption>
+	<figcaption>I'm not paid enough to write the other 39 reasons.</figcaption>
 	
-	<p>The hay yay like horse a. The horse in a hay yay. In like horse yay a hay the. In a. Yay. Like a. Hay a the like yay horse. Horse hay in yay a. A the horse yay like in hay. The horse like a in yay hay. Hay like horse a yay. In hay a horse. Hay a yay like the in. Hay a in like.  </p>
+	<p>Still not convinced? Check out this review from a top Chakra user</p>
+	<p class="quote"> 
+	RealUser1083102: 
+	"after incessant advertisements and posts from my friends with their pet snails, i knew i was incomplete without my own. now, i can’t function without knowing i have my snail pets! thank you chakrathought
+	"</p>
+
+	<p> Truly, one of the statements of the year captured in the wild. So what are you waiting for?!!?! Get your own pet snails today! </p>
 	
-	<p>Yay in like hay. A hay the yay. Like the. Horse hay a yay like. Horse a like yay. </p>
+	<img src="images/snailcycle.png"/>
+	<figcaption>Our editor didn’t know where else to place this image.</figcaption>
+	
 </main>
 
 <footer>

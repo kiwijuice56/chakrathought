@@ -72,6 +72,12 @@ p.author_name, figcaption {
 	font-size: 14px;
 }
 
+p.quote {
+	color: #91979e;
+	font-style: italic;
+	font-size: 18px;
+}
+
 figcaption {
 	text-align: center;
 }
